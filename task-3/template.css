@@ -1,0 +1,28 @@
+:root {
+    --game-size: 10;
+    --game-scale: 10px;
+
+    --game-actual-size: calc(var(--game-size) * var(--game-scale));
+}
+
+#grid-container {
+    width: var(--game-actual-size);
+    height: var(--game-actual-size);
+
+    clear: both;
+}
+
+.container
+
+grid-square {
+    width: var(--game-scale);
+    height: var(--game-scale);
+
+    float: left;
+
+    background-color: grey;
+}
+
+.grid-square.contains-player {
+    background-color: red !important;
+}
